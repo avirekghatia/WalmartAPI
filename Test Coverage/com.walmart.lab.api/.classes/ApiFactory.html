@@ -1,0 +1,133 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: ApiFactory</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.walmart.lab.api</a> ]
+</div>
+
+<h1>Coverage Summary for Class: ApiFactory (com.walmart.lab.api)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ApiFactory</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (4/ 6)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.walmart.lab.api;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import com.walmart.lab.conf.ApiConstants;
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;/**
+<i>6</i>&nbsp; * API Factory&lt;br&gt;
+<i>7</i>&nbsp; * &lt;p&gt;Use &lt;b&gt;getInstance()&lt;/b&gt; to get the instance of a API.&lt;/p&gt;&lt;br&gt;
+<i>8</i>&nbsp; * &lt;b&gt;ApiName&lt;/b&gt;&lt;br&gt;
+<i>9</i>&nbsp; * &lt;code&gt;&lt;pre&gt;
+<i>10</i>&nbsp; *     ApiConstants.SEARCH&lt;br&gt;
+<i>11</i>&nbsp; *     ApiConstants.REVIEWS&lt;br&gt;
+<i>12</i>&nbsp; *     ApiConstants.PRODUCT_RECOMMENDATION
+<i>13</i>&nbsp; * &lt;/pre&gt;&lt;/code&gt;&lt;br&gt;
+<i>14</i>&nbsp; *
+<i>15</i>&nbsp; * Example Use : &lt;br&gt;
+<i>16</i>&nbsp; *     &lt;code&gt;&lt;pre&gt;
+<i>17</i>&nbsp; *         //get SearchApi instance
+<i>18</i>&nbsp; *         BaseApi baseApi = ApiFactory.getInstance(ApiConstants.SEARCH,apiKey);
+<i>19</i>&nbsp; *     &lt;/pre&gt;&lt;/code&gt;
+<i>20</i>&nbsp; *
+<i>21</i>&nbsp; * @author Avirek Ghatia - ag4682 at nyu.edu
+<i>22</i>&nbsp; * @see &lt;a href=&quot;https://developer.walmartlabs.com/&quot;&gt;Walmart Open Lab&lt;/a&gt;
+<i>23</i>&nbsp; */
+<b class="nc"><i>24</i>&nbsp;public class ApiFactory {</b>
+<i>25</i>&nbsp;
+<i>26</i>&nbsp;    /**
+<i>27</i>&nbsp;     * Factory method getInstance(String, String)
+<i>28</i>&nbsp;     *
+<i>29</i>&nbsp;     * @param apiName API Name or Type
+<i>30</i>&nbsp;     * @param apiKey API key is mandatory. Register at &lt;a href=&quot;https://developer.walmartlabs.com/&quot;&gt;Walmart Open Lab&lt;/a&gt;
+<i>31</i>&nbsp;     *
+<i>32</i>&nbsp;     * @return BaseApi API available with Walmart
+<i>33</i>&nbsp;     * */
+<i>34</i>&nbsp;    public static BaseApi getInstance(String apiName, String apiKey) {
+<b class="fc"><i>35</i>&nbsp;        switch (apiName) {</b>
+<i>36</i>&nbsp;
+<i>37</i>&nbsp;            case ApiConstants.SEARCH:
+<b class="fc"><i>38</i>&nbsp;                return new SearchApi(apiKey);</b>
+<i>39</i>&nbsp;
+<i>40</i>&nbsp;            case ApiConstants.REVIEWS:
+<b class="fc"><i>41</i>&nbsp;                return new ReviewApi(apiKey);</b>
+<i>42</i>&nbsp;
+<i>43</i>&nbsp;            case ApiConstants.PRODUCT_RECOMMENDATION:
+<b class="fc"><i>44</i>&nbsp;                return new ProductRecommendationApi(apiKey);</b>
+<i>45</i>&nbsp;
+<i>46</i>&nbsp;            default:
+<b class="nc"><i>47</i>&nbsp;                return null;</b>
+<i>48</i>&nbsp;        }
+<i>49</i>&nbsp;    }
+<i>50</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2016-01-12 21:21</div>
+</div>
+</body>
+</html>

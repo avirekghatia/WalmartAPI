@@ -1,0 +1,412 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: ProductRecommendationResponse</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.walmart.lab.response</a> ]
+</div>
+
+<h1>Coverage Summary for Class: ProductRecommendationResponse (com.walmart.lab.response)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ProductRecommendationResponse</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    71.8%
+  </span>
+  <span class="absValue">
+    (51/ 71)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    81.1%
+  </span>
+  <span class="absValue">
+    (86/ 106)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.walmart.lab.response;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.io.Serializable;
+<i>4</i>&nbsp;import java.util.List;
+<i>5</i>&nbsp;
+<i>6</i>&nbsp;/**
+<i>7</i>&nbsp; * Response object of Product Recommendation API
+<i>8</i>&nbsp; *
+<i>9</i>&nbsp; * @author Avirek Ghatia - ag4682 at nyu.edu
+<i>10</i>&nbsp; * @see &lt;a href=&quot;https://developer.walmartlabs.com/docs/read/Product_Recommendation_API&quot;&gt;Product Recommendation API&lt;/a&gt;
+<i>11</i>&nbsp; */
+<b class="fc"><i>12</i>&nbsp;public class ProductRecommendationResponse implements Serializable {</b>
+<i>13</i>&nbsp;    private static final long serialVersionUID = 1234567891L;
+<i>14</i>&nbsp;    private int itemId;
+<i>15</i>&nbsp;    private int parentItemId;
+<i>16</i>&nbsp;    private String name;
+<i>17</i>&nbsp;    private float msrp;
+<i>18</i>&nbsp;    private float salePrice;
+<i>19</i>&nbsp;    private String upc;
+<i>20</i>&nbsp;    private String categoryPath;
+<i>21</i>&nbsp;    private String shortDescription;
+<i>22</i>&nbsp;    private String longDescription;
+<i>23</i>&nbsp;    private String brandName;
+<i>24</i>&nbsp;    private String thumbnailImage;
+<i>25</i>&nbsp;    private String mediumImage;
+<i>26</i>&nbsp;    private String largeImage;
+<i>27</i>&nbsp;    private String productTrackingUrl;
+<i>28</i>&nbsp;    private boolean ninetySevenCentShipping;
+<i>29</i>&nbsp;    private int standardShipRate;
+<i>30</i>&nbsp;    private String color;
+<i>31</i>&nbsp;    private boolean marketplace;
+<i>32</i>&nbsp;    private boolean shipToStore;
+<i>33</i>&nbsp;    private boolean freeShipToStore;
+<i>34</i>&nbsp;    private String modelNumber;
+<i>35</i>&nbsp;    private String productUrl;
+<i>36</i>&nbsp;    private String customerRating;
+<i>37</i>&nbsp;    private int numReviews;
+<i>38</i>&nbsp;    private List&lt;Integer&gt; variants;
+<i>39</i>&nbsp;    private String customerRatingImage;
+<i>40</i>&nbsp;    private String categoryNode;
+<i>41</i>&nbsp;    private boolean bundle;
+<i>42</i>&nbsp;    private boolean clearance;
+<i>43</i>&nbsp;    private boolean preOrder;
+<i>44</i>&nbsp;    private String stock;
+<i>45</i>&nbsp;    private String addToCartUrl;
+<i>46</i>&nbsp;    private String affiliateAddToCartUrl;
+<i>47</i>&nbsp;    private boolean freeShippingOver50Dollars;
+<i>48</i>&nbsp;    private boolean availableOnline;
+<i>49</i>&nbsp;
+<i>50</i>&nbsp;    public int getItemId() {
+<b class="fc"><i>51</i>&nbsp;        return itemId;</b>
+<i>52</i>&nbsp;    }
+<i>53</i>&nbsp;
+<i>54</i>&nbsp;    public void setItemId(int itemId) {
+<b class="fc"><i>55</i>&nbsp;        this.itemId = itemId;</b>
+<b class="fc"><i>56</i>&nbsp;    }</b>
+<i>57</i>&nbsp;
+<i>58</i>&nbsp;    public int getParentItemId() {
+<b class="fc"><i>59</i>&nbsp;        return parentItemId;</b>
+<i>60</i>&nbsp;    }
+<i>61</i>&nbsp;
+<i>62</i>&nbsp;    public void setParentItemId(int parentItemId) {
+<b class="fc"><i>63</i>&nbsp;        this.parentItemId = parentItemId;</b>
+<b class="fc"><i>64</i>&nbsp;    }</b>
+<i>65</i>&nbsp;
+<i>66</i>&nbsp;    public String getName() {
+<b class="fc"><i>67</i>&nbsp;        return name;</b>
+<i>68</i>&nbsp;    }
+<i>69</i>&nbsp;
+<i>70</i>&nbsp;    public void setName(String name) {
+<b class="fc"><i>71</i>&nbsp;        this.name = name;</b>
+<b class="fc"><i>72</i>&nbsp;    }</b>
+<i>73</i>&nbsp;
+<i>74</i>&nbsp;    public float getMsrp() {
+<b class="nc"><i>75</i>&nbsp;        return msrp;</b>
+<i>76</i>&nbsp;    }
+<i>77</i>&nbsp;
+<i>78</i>&nbsp;    public void setMsrp(float msrp) {
+<b class="fc"><i>79</i>&nbsp;        this.msrp = msrp;</b>
+<b class="fc"><i>80</i>&nbsp;    }</b>
+<i>81</i>&nbsp;
+<i>82</i>&nbsp;    public float getSalePrice() {
+<b class="fc"><i>83</i>&nbsp;        return salePrice;</b>
+<i>84</i>&nbsp;    }
+<i>85</i>&nbsp;
+<i>86</i>&nbsp;    public void setSalePrice(float salePrice) {
+<b class="fc"><i>87</i>&nbsp;        this.salePrice = salePrice;</b>
+<b class="fc"><i>88</i>&nbsp;    }</b>
+<i>89</i>&nbsp;
+<i>90</i>&nbsp;    public String getUpc() {
+<b class="fc"><i>91</i>&nbsp;        return upc;</b>
+<i>92</i>&nbsp;    }
+<i>93</i>&nbsp;
+<i>94</i>&nbsp;    public void setUpc(String upc) {
+<b class="fc"><i>95</i>&nbsp;        this.upc = upc;</b>
+<b class="fc"><i>96</i>&nbsp;    }</b>
+<i>97</i>&nbsp;
+<i>98</i>&nbsp;    public String getCategoryPath() {
+<b class="fc"><i>99</i>&nbsp;        return categoryPath;</b>
+<i>100</i>&nbsp;    }
+<i>101</i>&nbsp;
+<i>102</i>&nbsp;    public void setCategoryPath(String categoryPath) {
+<b class="fc"><i>103</i>&nbsp;        this.categoryPath = categoryPath;</b>
+<b class="fc"><i>104</i>&nbsp;    }</b>
+<i>105</i>&nbsp;
+<i>106</i>&nbsp;    public String getShortDescription() {
+<b class="fc"><i>107</i>&nbsp;        return shortDescription;</b>
+<i>108</i>&nbsp;    }
+<i>109</i>&nbsp;
+<i>110</i>&nbsp;    public void setShortDescription(String shortDescription) {
+<b class="fc"><i>111</i>&nbsp;        this.shortDescription = shortDescription;</b>
+<b class="fc"><i>112</i>&nbsp;    }</b>
+<i>113</i>&nbsp;
+<i>114</i>&nbsp;    public String getLongDescription() {
+<b class="fc"><i>115</i>&nbsp;        return longDescription;</b>
+<i>116</i>&nbsp;    }
+<i>117</i>&nbsp;
+<i>118</i>&nbsp;    public void setLongDescription(String longDescription) {
+<b class="fc"><i>119</i>&nbsp;        this.longDescription = longDescription;</b>
+<b class="fc"><i>120</i>&nbsp;    }</b>
+<i>121</i>&nbsp;
+<i>122</i>&nbsp;    public String getBrandName() {
+<b class="fc"><i>123</i>&nbsp;        return brandName;</b>
+<i>124</i>&nbsp;    }
+<i>125</i>&nbsp;
+<i>126</i>&nbsp;    public void setBrandName(String brandName) {
+<b class="fc"><i>127</i>&nbsp;        this.brandName = brandName;</b>
+<b class="fc"><i>128</i>&nbsp;    }</b>
+<i>129</i>&nbsp;
+<i>130</i>&nbsp;    public String getThumbnailImage() {
+<b class="nc"><i>131</i>&nbsp;        return thumbnailImage;</b>
+<i>132</i>&nbsp;    }
+<i>133</i>&nbsp;
+<i>134</i>&nbsp;    public void setThumbnailImage(String thumbnailImage) {
+<b class="fc"><i>135</i>&nbsp;        this.thumbnailImage = thumbnailImage;</b>
+<b class="fc"><i>136</i>&nbsp;    }</b>
+<i>137</i>&nbsp;
+<i>138</i>&nbsp;    public String getMediumImage() {
+<b class="nc"><i>139</i>&nbsp;        return mediumImage;</b>
+<i>140</i>&nbsp;    }
+<i>141</i>&nbsp;
+<i>142</i>&nbsp;    public void setMediumImage(String mediumImage) {
+<b class="fc"><i>143</i>&nbsp;        this.mediumImage = mediumImage;</b>
+<b class="fc"><i>144</i>&nbsp;    }</b>
+<i>145</i>&nbsp;
+<i>146</i>&nbsp;    public String getLargeImage() {
+<b class="nc"><i>147</i>&nbsp;        return largeImage;</b>
+<i>148</i>&nbsp;    }
+<i>149</i>&nbsp;
+<i>150</i>&nbsp;    public void setLargeImage(String largeImage) {
+<b class="fc"><i>151</i>&nbsp;        this.largeImage = largeImage;</b>
+<b class="fc"><i>152</i>&nbsp;    }</b>
+<i>153</i>&nbsp;
+<i>154</i>&nbsp;    public String getProductTrackingUrl() {
+<b class="fc"><i>155</i>&nbsp;        return productTrackingUrl;</b>
+<i>156</i>&nbsp;    }
+<i>157</i>&nbsp;
+<i>158</i>&nbsp;    public void setProductTrackingUrl(String productTrackingUrl) {
+<b class="fc"><i>159</i>&nbsp;        this.productTrackingUrl = productTrackingUrl;</b>
+<b class="fc"><i>160</i>&nbsp;    }</b>
+<i>161</i>&nbsp;
+<i>162</i>&nbsp;    public boolean isNinetySevenCentShipping() {
+<b class="nc"><i>163</i>&nbsp;        return ninetySevenCentShipping;</b>
+<i>164</i>&nbsp;    }
+<i>165</i>&nbsp;
+<i>166</i>&nbsp;    public void setNinetySevenCentShipping(boolean ninetySevenCentShipping) {
+<b class="fc"><i>167</i>&nbsp;        this.ninetySevenCentShipping = ninetySevenCentShipping;</b>
+<b class="fc"><i>168</i>&nbsp;    }</b>
+<i>169</i>&nbsp;
+<i>170</i>&nbsp;    public int getStandardShipRate() {
+<b class="nc"><i>171</i>&nbsp;        return standardShipRate;</b>
+<i>172</i>&nbsp;    }
+<i>173</i>&nbsp;
+<i>174</i>&nbsp;    public void setStandardShipRate(int standardShipRate) {
+<b class="fc"><i>175</i>&nbsp;        this.standardShipRate = standardShipRate;</b>
+<b class="fc"><i>176</i>&nbsp;    }</b>
+<i>177</i>&nbsp;
+<i>178</i>&nbsp;    public String getColor() {
+<b class="nc"><i>179</i>&nbsp;        return color;</b>
+<i>180</i>&nbsp;    }
+<i>181</i>&nbsp;
+<i>182</i>&nbsp;    public void setColor(String color) {
+<b class="fc"><i>183</i>&nbsp;        this.color = color;</b>
+<b class="fc"><i>184</i>&nbsp;    }</b>
+<i>185</i>&nbsp;
+<i>186</i>&nbsp;    public boolean isMarketplace() {
+<b class="nc"><i>187</i>&nbsp;        return marketplace;</b>
+<i>188</i>&nbsp;    }
+<i>189</i>&nbsp;
+<i>190</i>&nbsp;    public void setMarketplace(boolean marketplace) {
+<b class="fc"><i>191</i>&nbsp;        this.marketplace = marketplace;</b>
+<b class="fc"><i>192</i>&nbsp;    }</b>
+<i>193</i>&nbsp;
+<i>194</i>&nbsp;    public boolean isShipToStore() {
+<b class="nc"><i>195</i>&nbsp;        return shipToStore;</b>
+<i>196</i>&nbsp;    }
+<i>197</i>&nbsp;
+<i>198</i>&nbsp;    public void setShipToStore(boolean shipToStore) {
+<b class="fc"><i>199</i>&nbsp;        this.shipToStore = shipToStore;</b>
+<b class="fc"><i>200</i>&nbsp;    }</b>
+<i>201</i>&nbsp;
+<i>202</i>&nbsp;    public boolean isFreeShipToStore() {
+<b class="nc"><i>203</i>&nbsp;        return freeShipToStore;</b>
+<i>204</i>&nbsp;    }
+<i>205</i>&nbsp;
+<i>206</i>&nbsp;    public void setFreeShipToStore(boolean freeShipToStore) {
+<b class="fc"><i>207</i>&nbsp;        this.freeShipToStore = freeShipToStore;</b>
+<b class="fc"><i>208</i>&nbsp;    }</b>
+<i>209</i>&nbsp;
+<i>210</i>&nbsp;    public String getModelNumber() {
+<b class="fc"><i>211</i>&nbsp;        return modelNumber;</b>
+<i>212</i>&nbsp;    }
+<i>213</i>&nbsp;
+<i>214</i>&nbsp;    public void setModelNumber(String modelNumber) {
+<b class="fc"><i>215</i>&nbsp;        this.modelNumber = modelNumber;</b>
+<b class="fc"><i>216</i>&nbsp;    }</b>
+<i>217</i>&nbsp;
+<i>218</i>&nbsp;    public String getProductUrl() {
+<b class="fc"><i>219</i>&nbsp;        return productUrl;</b>
+<i>220</i>&nbsp;    }
+<i>221</i>&nbsp;
+<i>222</i>&nbsp;    public void setProductUrl(String productUrl) {
+<b class="fc"><i>223</i>&nbsp;        this.productUrl = productUrl;</b>
+<b class="fc"><i>224</i>&nbsp;    }</b>
+<i>225</i>&nbsp;
+<i>226</i>&nbsp;    public String getCustomerRating() {
+<b class="fc"><i>227</i>&nbsp;        return customerRating;</b>
+<i>228</i>&nbsp;    }
+<i>229</i>&nbsp;
+<i>230</i>&nbsp;    public void setCustomerRating(String customerRating) {
+<b class="fc"><i>231</i>&nbsp;        this.customerRating = customerRating;</b>
+<b class="fc"><i>232</i>&nbsp;    }</b>
+<i>233</i>&nbsp;
+<i>234</i>&nbsp;    public int getNumReviews() {
+<b class="nc"><i>235</i>&nbsp;        return numReviews;</b>
+<i>236</i>&nbsp;    }
+<i>237</i>&nbsp;
+<i>238</i>&nbsp;    public void setNumReviews(int numReviews) {
+<b class="fc"><i>239</i>&nbsp;        this.numReviews = numReviews;</b>
+<b class="fc"><i>240</i>&nbsp;    }</b>
+<i>241</i>&nbsp;
+<i>242</i>&nbsp;    public List&lt;Integer&gt; getVariants() {
+<b class="nc"><i>243</i>&nbsp;        return variants;</b>
+<i>244</i>&nbsp;    }
+<i>245</i>&nbsp;
+<i>246</i>&nbsp;    public void setVariants(List&lt;Integer&gt; variants) {
+<b class="fc"><i>247</i>&nbsp;        this.variants = variants;</b>
+<b class="fc"><i>248</i>&nbsp;    }</b>
+<i>249</i>&nbsp;
+<i>250</i>&nbsp;    public String getCustomerRatingImage() {
+<b class="nc"><i>251</i>&nbsp;        return customerRatingImage;</b>
+<i>252</i>&nbsp;    }
+<i>253</i>&nbsp;
+<i>254</i>&nbsp;    public void setCustomerRatingImage(String customerRatingImage) {
+<b class="fc"><i>255</i>&nbsp;        this.customerRatingImage = customerRatingImage;</b>
+<b class="fc"><i>256</i>&nbsp;    }</b>
+<i>257</i>&nbsp;
+<i>258</i>&nbsp;    public String getCategoryNode() {
+<b class="nc"><i>259</i>&nbsp;        return categoryNode;</b>
+<i>260</i>&nbsp;    }
+<i>261</i>&nbsp;
+<i>262</i>&nbsp;    public void setCategoryNode(String categoryNode) {
+<b class="fc"><i>263</i>&nbsp;        this.categoryNode = categoryNode;</b>
+<b class="fc"><i>264</i>&nbsp;    }</b>
+<i>265</i>&nbsp;
+<i>266</i>&nbsp;    public boolean isBundle() {
+<b class="nc"><i>267</i>&nbsp;        return bundle;</b>
+<i>268</i>&nbsp;    }
+<i>269</i>&nbsp;
+<i>270</i>&nbsp;    public void setBundle(boolean bundle) {
+<b class="fc"><i>271</i>&nbsp;        this.bundle = bundle;</b>
+<b class="fc"><i>272</i>&nbsp;    }</b>
+<i>273</i>&nbsp;
+<i>274</i>&nbsp;    public boolean isClearance() {
+<b class="nc"><i>275</i>&nbsp;        return clearance;</b>
+<i>276</i>&nbsp;    }
+<i>277</i>&nbsp;
+<i>278</i>&nbsp;    public void setClearance(boolean clearance) {
+<b class="fc"><i>279</i>&nbsp;        this.clearance = clearance;</b>
+<b class="fc"><i>280</i>&nbsp;    }</b>
+<i>281</i>&nbsp;
+<i>282</i>&nbsp;    public boolean isPreOrder() {
+<b class="nc"><i>283</i>&nbsp;        return preOrder;</b>
+<i>284</i>&nbsp;    }
+<i>285</i>&nbsp;
+<i>286</i>&nbsp;    public void setPreOrder(boolean preOrder) {
+<b class="fc"><i>287</i>&nbsp;        this.preOrder = preOrder;</b>
+<b class="fc"><i>288</i>&nbsp;    }</b>
+<i>289</i>&nbsp;
+<i>290</i>&nbsp;    public String getStock() {
+<b class="fc"><i>291</i>&nbsp;        return stock;</b>
+<i>292</i>&nbsp;    }
+<i>293</i>&nbsp;
+<i>294</i>&nbsp;    public void setStock(String stock) {
+<b class="fc"><i>295</i>&nbsp;        this.stock = stock;</b>
+<b class="fc"><i>296</i>&nbsp;    }</b>
+<i>297</i>&nbsp;
+<i>298</i>&nbsp;    public String getAddToCartUrl() {
+<b class="fc"><i>299</i>&nbsp;        return addToCartUrl;</b>
+<i>300</i>&nbsp;    }
+<i>301</i>&nbsp;
+<i>302</i>&nbsp;    public void setAddToCartUrl(String addToCartUrl) {
+<b class="fc"><i>303</i>&nbsp;        this.addToCartUrl = addToCartUrl;</b>
+<b class="fc"><i>304</i>&nbsp;    }</b>
+<i>305</i>&nbsp;
+<i>306</i>&nbsp;    public String getAffiliateAddToCartUrl() {
+<b class="nc"><i>307</i>&nbsp;        return affiliateAddToCartUrl;</b>
+<i>308</i>&nbsp;    }
+<i>309</i>&nbsp;
+<i>310</i>&nbsp;    public void setAffiliateAddToCartUrl(String affiliateAddToCartUrl) {
+<b class="fc"><i>311</i>&nbsp;        this.affiliateAddToCartUrl = affiliateAddToCartUrl;</b>
+<b class="fc"><i>312</i>&nbsp;    }</b>
+<i>313</i>&nbsp;
+<i>314</i>&nbsp;    public boolean isFreeShippingOver50Dollars() {
+<b class="nc"><i>315</i>&nbsp;        return freeShippingOver50Dollars;</b>
+<i>316</i>&nbsp;    }
+<i>317</i>&nbsp;
+<i>318</i>&nbsp;    public void setFreeShippingOver50Dollars(boolean freeShippingOver50Dollars) {
+<b class="fc"><i>319</i>&nbsp;        this.freeShippingOver50Dollars = freeShippingOver50Dollars;</b>
+<b class="fc"><i>320</i>&nbsp;    }</b>
+<i>321</i>&nbsp;
+<i>322</i>&nbsp;    public boolean isAvailableOnline() {
+<b class="nc"><i>323</i>&nbsp;        return availableOnline;</b>
+<i>324</i>&nbsp;    }
+<i>325</i>&nbsp;
+<i>326</i>&nbsp;    public void setAvailableOnline(boolean availableOnline) {
+<b class="fc"><i>327</i>&nbsp;        this.availableOnline = availableOnline;</b>
+<b class="fc"><i>328</i>&nbsp;    }</b>
+<i>329</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2016-01-12 21:21</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+java -jar walmart-lab.jar -key <api key> -query camera
+java -jar walmart-lab.jar -key <api key> -query tortilla
+java -jar walmart-lab.jar -key <api key> -query tortilla -limit 20
+java -jar walmart-lab.jar -key <api key> -query cactus -limit 5
+java -jar walmart-lab.jar -key <api key> -query Keurig

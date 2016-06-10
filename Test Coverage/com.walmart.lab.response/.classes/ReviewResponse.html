@@ -1,0 +1,455 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: ReviewResponse</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.walmart.lab.response</a> ]
+</div>
+
+<h1>Coverage Summary for Class: ReviewResponse (com.walmart.lab.response)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ReviewResponse</td>
+<td class="coverageStat">
+  <span class="percent">
+    84%
+  </span>
+  <span class="absValue">
+    (21/ 25)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    89.2%
+  </span>
+  <span class="absValue">
+    (33/ 37)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">ReviewResponse$Review</td>
+<td class="coverageStat">
+  <span class="percent">
+    73.7%
+  </span>
+  <span class="absValue">
+    (14/ 19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    82.1%
+  </span>
+  <span class="absValue">
+    (23/ 28)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ReviewResponse$Review$Rating</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (4/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    85.7%
+  </span>
+  <span class="absValue">
+    (6/ 7)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ReviewResponse$ReviewStatistics</td>
+<td class="coverageStat">
+  <span class="percent">
+    55.6%
+  </span>
+  <span class="absValue">
+    (5/ 9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    69.2%
+  </span>
+  <span class="absValue">
+    (9/ 13)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">ReviewResponse$ReviewStatistics$RatingDistribution</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (3/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    71.4%
+  </span>
+  <span class="absValue">
+    (5/ 7)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    74.6%
+  </span>
+  <span class="absValue">
+    (47/ 63)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    82.6%
+  </span>
+  <span class="absValue">
+    (76/ 92)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.walmart.lab.response;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.io.Serializable;
+<i>4</i>&nbsp;import java.util.List;
+<i>5</i>&nbsp;
+<i>6</i>&nbsp;/**
+<i>7</i>&nbsp; * Response object of Review API
+<i>8</i>&nbsp; *
+<i>9</i>&nbsp; * @author Avirek Ghatia - ag4682 at nyu.edu
+<i>10</i>&nbsp; * @see &lt;a href=&quot;https://developer.walmartlabs.com/docs/read/Reviews_Api&quot;&gt;Reviews API&lt;/a&gt;
+<i>11</i>&nbsp; */
+<b class="fc"><i>12</i>&nbsp;public class ReviewResponse implements Serializable {</b>
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;    private static final long serialVersionUID = 1234567892L;
+<i>15</i>&nbsp;
+<i>16</i>&nbsp;    private int itemId;
+<i>17</i>&nbsp;    private String name;
+<i>18</i>&nbsp;    private int salePrice;
+<i>19</i>&nbsp;    private String upc;
+<i>20</i>&nbsp;    private String categoryPath;
+<i>21</i>&nbsp;    private String brandName;
+<i>22</i>&nbsp;    private String productTrackingUrl;
+<i>23</i>&nbsp;    private String productUrl;
+<i>24</i>&nbsp;    private String categoryNode;
+<i>25</i>&nbsp;    private List&lt;Review&gt; reviews;
+<i>26</i>&nbsp;    private ReviewStatistics reviewStatistics;
+<i>27</i>&nbsp;    private boolean availableOnline;
+<i>28</i>&nbsp;
+<i>29</i>&nbsp;    public int getItemId() {
+<b class="fc"><i>30</i>&nbsp;        return itemId;</b>
+<i>31</i>&nbsp;    }
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;    public void setItemId(int itemId) {
+<b class="fc"><i>34</i>&nbsp;        this.itemId = itemId;</b>
+<b class="fc"><i>35</i>&nbsp;    }</b>
+<i>36</i>&nbsp;
+<i>37</i>&nbsp;    public String getName() {
+<b class="fc"><i>38</i>&nbsp;        return name;</b>
+<i>39</i>&nbsp;    }
+<i>40</i>&nbsp;
+<i>41</i>&nbsp;    public void setName(String name) {
+<b class="fc"><i>42</i>&nbsp;        this.name = name;</b>
+<b class="fc"><i>43</i>&nbsp;    }</b>
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;    public int getSalePrice() {
+<b class="nc"><i>46</i>&nbsp;        return salePrice;</b>
+<i>47</i>&nbsp;    }
+<i>48</i>&nbsp;
+<i>49</i>&nbsp;    public void setSalePrice(int salePrice) {
+<b class="fc"><i>50</i>&nbsp;        this.salePrice = salePrice;</b>
+<b class="fc"><i>51</i>&nbsp;    }</b>
+<i>52</i>&nbsp;
+<i>53</i>&nbsp;    public String getUpc() {
+<b class="fc"><i>54</i>&nbsp;        return upc;</b>
+<i>55</i>&nbsp;    }
+<i>56</i>&nbsp;
+<i>57</i>&nbsp;    public void setUpc(String upc) {
+<b class="fc"><i>58</i>&nbsp;        this.upc = upc;</b>
+<b class="fc"><i>59</i>&nbsp;    }</b>
+<i>60</i>&nbsp;
+<i>61</i>&nbsp;    public String getCategoryPath() {
+<b class="fc"><i>62</i>&nbsp;        return categoryPath;</b>
+<i>63</i>&nbsp;    }
+<i>64</i>&nbsp;
+<i>65</i>&nbsp;    public void setCategoryPath(String categoryPath) {
+<b class="fc"><i>66</i>&nbsp;        this.categoryPath = categoryPath;</b>
+<b class="fc"><i>67</i>&nbsp;    }</b>
+<i>68</i>&nbsp;
+<i>69</i>&nbsp;    public String getBrandName() {
+<b class="fc"><i>70</i>&nbsp;        return brandName;</b>
+<i>71</i>&nbsp;    }
+<i>72</i>&nbsp;
+<i>73</i>&nbsp;    public void setBrandName(String brandName) {
+<b class="fc"><i>74</i>&nbsp;        this.brandName = brandName;</b>
+<b class="fc"><i>75</i>&nbsp;    }</b>
+<i>76</i>&nbsp;
+<i>77</i>&nbsp;    public String getProductTrackingUrl() {
+<b class="fc"><i>78</i>&nbsp;        return productTrackingUrl;</b>
+<i>79</i>&nbsp;    }
+<i>80</i>&nbsp;
+<i>81</i>&nbsp;    public void setProductTrackingUrl(String productTrackingUrl) {
+<b class="fc"><i>82</i>&nbsp;        this.productTrackingUrl = productTrackingUrl;</b>
+<b class="fc"><i>83</i>&nbsp;    }</b>
+<i>84</i>&nbsp;
+<i>85</i>&nbsp;    public String getProductUrl() {
+<b class="nc"><i>86</i>&nbsp;        return productUrl;</b>
+<i>87</i>&nbsp;    }
+<i>88</i>&nbsp;
+<i>89</i>&nbsp;    public void setProductUrl(String productUrl) {
+<b class="fc"><i>90</i>&nbsp;        this.productUrl = productUrl;</b>
+<b class="fc"><i>91</i>&nbsp;    }</b>
+<i>92</i>&nbsp;
+<i>93</i>&nbsp;    public String getCategoryNode() {
+<b class="nc"><i>94</i>&nbsp;        return categoryNode;</b>
+<i>95</i>&nbsp;    }
+<i>96</i>&nbsp;
+<i>97</i>&nbsp;    public void setCategoryNode(String categoryNode) {
+<b class="fc"><i>98</i>&nbsp;        this.categoryNode = categoryNode;</b>
+<b class="fc"><i>99</i>&nbsp;    }</b>
+<i>100</i>&nbsp;
+<i>101</i>&nbsp;    public List&lt;Review&gt; getReviews() {
+<b class="fc"><i>102</i>&nbsp;        return reviews;</b>
+<i>103</i>&nbsp;    }
+<i>104</i>&nbsp;
+<i>105</i>&nbsp;    public void setReviews(List&lt;Review&gt; reviews) {
+<b class="fc"><i>106</i>&nbsp;        this.reviews = reviews;</b>
+<b class="fc"><i>107</i>&nbsp;    }</b>
+<i>108</i>&nbsp;
+<i>109</i>&nbsp;    public ReviewStatistics getReviewStatistics() {
+<b class="fc"><i>110</i>&nbsp;        return reviewStatistics;</b>
+<i>111</i>&nbsp;    }
+<i>112</i>&nbsp;
+<i>113</i>&nbsp;    public void setReviewStatistics(ReviewStatistics reviewStatistics) {
+<b class="fc"><i>114</i>&nbsp;        this.reviewStatistics = reviewStatistics;</b>
+<b class="fc"><i>115</i>&nbsp;    }</b>
+<i>116</i>&nbsp;
+<i>117</i>&nbsp;    public boolean isAvailableOnline() {
+<b class="nc"><i>118</i>&nbsp;        return availableOnline;</b>
+<i>119</i>&nbsp;    }
+<i>120</i>&nbsp;
+<i>121</i>&nbsp;    public void setAvailableOnline(boolean availableOnline) {
+<b class="fc"><i>122</i>&nbsp;        this.availableOnline = availableOnline;</b>
+<b class="fc"><i>123</i>&nbsp;    }</b>
+<i>124</i>&nbsp;
+<b class="fc"><i>125</i>&nbsp;    public static class Review {</b>
+<i>126</i>&nbsp;        private String name;
+<i>127</i>&nbsp;        private Rating overallRating;
+<i>128</i>&nbsp;        private List&lt;Rating&gt; productAttributes;
+<i>129</i>&nbsp;        private String reviewer;
+<i>130</i>&nbsp;        private String reviewText;
+<i>131</i>&nbsp;        private String submissionTime;
+<i>132</i>&nbsp;        private String title;
+<i>133</i>&nbsp;        private String upVotes;
+<i>134</i>&nbsp;        private String downVotes;
+<i>135</i>&nbsp;
+<i>136</i>&nbsp;        public String getName() {
+<b class="nc"><i>137</i>&nbsp;            return name;</b>
+<i>138</i>&nbsp;        }
+<i>139</i>&nbsp;
+<i>140</i>&nbsp;        public void setName(String name) {
+<b class="fc"><i>141</i>&nbsp;            this.name = name;</b>
+<b class="fc"><i>142</i>&nbsp;        }</b>
+<i>143</i>&nbsp;
+<i>144</i>&nbsp;        public Rating getOverallRating() {
+<b class="fc"><i>145</i>&nbsp;            return overallRating;</b>
+<i>146</i>&nbsp;        }
+<i>147</i>&nbsp;
+<i>148</i>&nbsp;        public void setOverallRating(Rating overallRating) {
+<b class="fc"><i>149</i>&nbsp;            this.overallRating = overallRating;</b>
+<b class="fc"><i>150</i>&nbsp;        }</b>
+<i>151</i>&nbsp;
+<i>152</i>&nbsp;        public List&lt;Rating&gt; getProductAttributes() {
+<b class="nc"><i>153</i>&nbsp;            return productAttributes;</b>
+<i>154</i>&nbsp;        }
+<i>155</i>&nbsp;
+<i>156</i>&nbsp;        public void setProductAttributes(List&lt;Rating&gt; productAttributes) {
+<b class="fc"><i>157</i>&nbsp;            this.productAttributes = productAttributes;</b>
+<b class="fc"><i>158</i>&nbsp;        }</b>
+<i>159</i>&nbsp;
+<i>160</i>&nbsp;        public String getReviewer() {
+<b class="nc"><i>161</i>&nbsp;            return reviewer;</b>
+<i>162</i>&nbsp;        }
+<i>163</i>&nbsp;
+<i>164</i>&nbsp;        public void setReviewer(String reviewer) {
+<b class="fc"><i>165</i>&nbsp;            this.reviewer = reviewer;</b>
+<b class="fc"><i>166</i>&nbsp;        }</b>
+<i>167</i>&nbsp;
+<i>168</i>&nbsp;        public String getReviewText() {
+<b class="nc"><i>169</i>&nbsp;            return reviewText;</b>
+<i>170</i>&nbsp;        }
+<i>171</i>&nbsp;
+<i>172</i>&nbsp;        public void setReviewText(String reviewText) {
+<b class="fc"><i>173</i>&nbsp;            this.reviewText = reviewText;</b>
+<b class="fc"><i>174</i>&nbsp;        }</b>
+<i>175</i>&nbsp;
+<i>176</i>&nbsp;        public String getSubmissionTime() {
+<b class="fc"><i>177</i>&nbsp;            return submissionTime;</b>
+<i>178</i>&nbsp;        }
+<i>179</i>&nbsp;
+<i>180</i>&nbsp;        public void setSubmissionTime(String submissionTime) {
+<b class="fc"><i>181</i>&nbsp;            this.submissionTime = submissionTime;</b>
+<b class="fc"><i>182</i>&nbsp;        }</b>
+<i>183</i>&nbsp;
+<i>184</i>&nbsp;        public String getTitle() {
+<b class="nc"><i>185</i>&nbsp;            return title;</b>
+<i>186</i>&nbsp;        }
+<i>187</i>&nbsp;
+<i>188</i>&nbsp;        public void setTitle(String title) {
+<b class="fc"><i>189</i>&nbsp;            this.title = title;</b>
+<b class="fc"><i>190</i>&nbsp;        }</b>
+<i>191</i>&nbsp;
+<i>192</i>&nbsp;        public String getUpVotes() {
+<b class="fc"><i>193</i>&nbsp;            return upVotes;</b>
+<i>194</i>&nbsp;        }
+<i>195</i>&nbsp;
+<i>196</i>&nbsp;        public void setUpVotes(String upVotes) {
+<b class="fc"><i>197</i>&nbsp;            this.upVotes = upVotes;</b>
+<b class="fc"><i>198</i>&nbsp;        }</b>
+<i>199</i>&nbsp;
+<i>200</i>&nbsp;        public String getDownVotes() {
+<b class="fc"><i>201</i>&nbsp;            return downVotes;</b>
+<i>202</i>&nbsp;        }
+<i>203</i>&nbsp;
+<i>204</i>&nbsp;        public void setDownVotes(String downVotes) {
+<b class="fc"><i>205</i>&nbsp;            this.downVotes = downVotes;</b>
+<b class="fc"><i>206</i>&nbsp;        }</b>
+<i>207</i>&nbsp;
+<b class="fc"><i>208</i>&nbsp;        public static class Rating {</b>
+<i>209</i>&nbsp;            private String label;
+<i>210</i>&nbsp;            private String rating;
+<i>211</i>&nbsp;
+<i>212</i>&nbsp;            public String getLabel() {
+<b class="nc"><i>213</i>&nbsp;                return label;</b>
+<i>214</i>&nbsp;            }
+<i>215</i>&nbsp;
+<i>216</i>&nbsp;            public void setLabel(String label) {
+<b class="fc"><i>217</i>&nbsp;                this.label = label;</b>
+<b class="fc"><i>218</i>&nbsp;            }</b>
+<i>219</i>&nbsp;
+<i>220</i>&nbsp;            public String getRating() {
+<b class="fc"><i>221</i>&nbsp;                return rating;</b>
+<i>222</i>&nbsp;            }
+<i>223</i>&nbsp;
+<i>224</i>&nbsp;            public void setRating(String rating) {
+<b class="fc"><i>225</i>&nbsp;                this.rating = rating;</b>
+<b class="fc"><i>226</i>&nbsp;            }</b>
+<i>227</i>&nbsp;        }
+<i>228</i>&nbsp;    }
+<i>229</i>&nbsp;
+<b class="fc"><i>230</i>&nbsp;    public static class ReviewStatistics {</b>
+<i>231</i>&nbsp;        private String averageOverallRating;
+<i>232</i>&nbsp;        private String overallRatingRange;
+<i>233</i>&nbsp;        private List&lt;RatingDistribution&gt; ratingDistributions;
+<i>234</i>&nbsp;        private String totalReviewCount;
+<i>235</i>&nbsp;
+<i>236</i>&nbsp;        public String getAverageOverallRating() {
+<b class="nc"><i>237</i>&nbsp;            return averageOverallRating;</b>
+<i>238</i>&nbsp;        }
+<i>239</i>&nbsp;
+<i>240</i>&nbsp;        public void setAverageOverallRating(String averageOverallRating) {
+<b class="fc"><i>241</i>&nbsp;            this.averageOverallRating = averageOverallRating;</b>
+<b class="fc"><i>242</i>&nbsp;        }</b>
+<i>243</i>&nbsp;
+<i>244</i>&nbsp;        public String getOverallRatingRange() {
+<b class="nc"><i>245</i>&nbsp;            return overallRatingRange;</b>
+<i>246</i>&nbsp;        }
+<i>247</i>&nbsp;
+<i>248</i>&nbsp;        public void setOverallRatingRange(String overallRatingRange) {
+<b class="fc"><i>249</i>&nbsp;            this.overallRatingRange = overallRatingRange;</b>
+<b class="fc"><i>250</i>&nbsp;        }</b>
+<i>251</i>&nbsp;
+<i>252</i>&nbsp;        public List&lt;RatingDistribution&gt; getRatingDistributions() {
+<b class="nc"><i>253</i>&nbsp;            return ratingDistributions;</b>
+<i>254</i>&nbsp;        }
+<i>255</i>&nbsp;
+<i>256</i>&nbsp;        public void setRatingDistributions(List&lt;RatingDistribution&gt; ratingDistributions) {
+<b class="fc"><i>257</i>&nbsp;            this.ratingDistributions = ratingDistributions;</b>
+<b class="fc"><i>258</i>&nbsp;        }</b>
+<i>259</i>&nbsp;
+<i>260</i>&nbsp;        public String getTotalReviewCount() {
+<b class="nc"><i>261</i>&nbsp;            return totalReviewCount;</b>
+<i>262</i>&nbsp;        }
+<i>263</i>&nbsp;
+<i>264</i>&nbsp;        public void setTotalReviewCount(String totalReviewCount) {
+<b class="fc"><i>265</i>&nbsp;            this.totalReviewCount = totalReviewCount;</b>
+<b class="fc"><i>266</i>&nbsp;        }</b>
+<i>267</i>&nbsp;
+<b class="fc"><i>268</i>&nbsp;        public static class RatingDistribution {</b>
+<i>269</i>&nbsp;            private String count;
+<i>270</i>&nbsp;            private String ratingValue;
+<i>271</i>&nbsp;
+<i>272</i>&nbsp;            public String getCount() {
+<b class="nc"><i>273</i>&nbsp;                return count;</b>
+<i>274</i>&nbsp;            }
+<i>275</i>&nbsp;
+<i>276</i>&nbsp;            public void setCount(String count) {
+<b class="fc"><i>277</i>&nbsp;                this.count = count;</b>
+<b class="fc"><i>278</i>&nbsp;            }</b>
+<i>279</i>&nbsp;
+<i>280</i>&nbsp;            public String getRatingValue() {
+<b class="nc"><i>281</i>&nbsp;                return ratingValue;</b>
+<i>282</i>&nbsp;            }
+<i>283</i>&nbsp;
+<i>284</i>&nbsp;            public void setRatingValue(String ratingValue) {
+<b class="fc"><i>285</i>&nbsp;                this.ratingValue = ratingValue;</b>
+<b class="fc"><i>286</i>&nbsp;            }</b>
+<i>287</i>&nbsp;        }
+<i>288</i>&nbsp;    }
+<i>289</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2016-01-12 21:21</div>
+</div>
+</body>
+</html>

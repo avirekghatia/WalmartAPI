@@ -1,0 +1,107 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: RatingScale</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.walmart.lab</a> ]
+</div>
+
+<h1>Coverage Summary for Class: RatingScale (com.walmart.lab)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">RatingScale</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/ 4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (10/ 10)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.walmart.lab;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;/**
+<i>4</i>&nbsp; * Rating Scale w.r.t number of stars
+<i>5</i>&nbsp; *
+<i>6</i>&nbsp; * @author Avirek Ghatia - ag4682 at nyu.edu
+<i>7</i>&nbsp; */
+<b class="fc"><i>8</i>&nbsp;public enum RatingScale {</b>
+<b class="fc"><i>9</i>&nbsp;    FIVE_STAR(3),</b>
+<b class="fc"><i>10</i>&nbsp;    FOUR_STAR(2),</b>
+<b class="fc"><i>11</i>&nbsp;    THREE_STAR(1),</b>
+<b class="fc"><i>12</i>&nbsp;    TWO_STAR(-1),</b>
+<b class="fc"><i>13</i>&nbsp;    ONE_STAR(-1);</b>
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;    private int ratingWeight;
+<i>16</i>&nbsp;
+<b class="fc"><i>17</i>&nbsp;    RatingScale(int ratingWeight) {</b>
+<b class="fc"><i>18</i>&nbsp;        this.ratingWeight = ratingWeight;</b>
+<b class="fc"><i>19</i>&nbsp;    }</b>
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    public int getRatingWeight() {
+<b class="fc"><i>22</i>&nbsp;        return ratingWeight;</b>
+<i>23</i>&nbsp;    }
+<i>24</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2016-01-12 21:21</div>
+</div>
+</body>
+</html>
